@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Nikolic</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+    <!-- HEADER -->
+    <header id="slider" class="btm_border">
+        <!-- BAR -->
+        <div id="bar" class="dp-flex">
+            <!-- LOGO -->
+            <div id="logo" class="scroll">
+                <div id="logoImg">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <h1 class="unclickable">
+                    <span>UI / UX / WEB design</span>
+                </h1>
+            </div>
+            <!-- NAVIGATION -->
+            <nav class="scroll">
+                <ul class="dp-flex">
+                    <li class="dp-flex"><a href="#link1">Skills</a></li>
+                    <li class="dp-flex"><a href="#link2">Projects</a></li>
+                    <li class="dp-flex"><a href="#link3">About</a></li>
+                    <li class="dp-flex"><a href="#link4">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- NASLOVI U SLIDERU -->
+        <div id="naslovi" class="scroll">
+            <h1 class="naslov"><i class="fa fa-laptop"></i><span class="unclickable"> Adam Nikolić</span></h1>
+            <h2 class="naslov"><span class="unclickable">Front-end developer </span><i class="fa fa-code"></i></h2>
+        </div>
+    </header>
+    <main>
+    <!-- SKILLS -->
+        <div id="skills_all" class="btm_border">
+            <h2 class="unclickable" id="link1">Skills</h2>
+            <!-- CONTENT SKILLS -->
+            <div id="skills" class="scroll">
+                <div class="skills_content">
+                    <div class="chart">
+                        <div class="html transition">
+                            <h4 class="unclickable">HTML5</h4>
+                            <p class="unclickable">90%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTENT SKILLS -->
+                <div class="skills_content">
+                    <div class="chart">
+                        <div class="css transition">
+                            <h4 class="unclickable">CSS3</h4>
+                            <p class="unclickable">80%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTENT SKILLS -->
+                <div class="skills_content">
+                    <div class="chart">
+                        <div class="bootstrap transition">
+                            <h4 class="unclickable">Bootstrap</h4>
+                            <p class="unclickable">60%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- SKILLS -->
+                <div class="skills_content">
+                    <div class="chart">
+                        <div class="js transition">
+                            <h4 class="unclickable">Javascript</h4>
+                            <p class="unclickable">30%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PROJECTS -->
+        <div id="projects" class="btm_border">
+            <h2 class="unclickable" id="link2">Projects</h2>
+            <div id="prjtContent" class="scroll dp-flex">
+                <div class="prjtImg">
+                    <figure>
+                        <img src="img/astro.jpg" alt="project"/>
+                        <figcaption>
+                            <h3>astroworld.com</h3>
+                            <span>HTML5, CSS3, Javascript (responsive)</span>
+                            <a href="#">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="prjtImg">
+                    <figure>
+                        <img src="img/zlat.jpg" alt="project"/>
+                        <figcaption>
+                            <h3>zlatibor.com</h3>
+                            <span>HTML5, CSS3 (non-responsive)</span>
+                            <a href="https://adamnik101.github.io/zlatibor/index.html">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="prjtImg">
+                    <figure>
+                        <img src="img/hoodie.jpg" alt="project"/>
+                        <figcaption>
+                            <h3>hoodieszn.com</h3>
+                            <span>HTML5, CSS3, Bootstrap (responsive)</span>
+                            <a href="#">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="prjtImg">
+                    <figure>
+                        <img src="img/boomin.jpg" alt="project"/>
+                        <figcaption>
+                            <h3>metroboomin.com</h3>
+                            <span>HTML5, CSS3 (responsive)</span>
+                            <a href="#">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT -->
+        <div id="about" class="btm_border">
+            <h2 class="unclickable" id="link3">About</h2>
+            <div id="aboutContent" class="scroll">
+                <div id="autor">
+                    <img src="img/autor.jpg" alt="author"/>
+                </div>
+                <div id="autorTekst">
+                    <p class="unclickable">My name is Adam Nikolić. I'm from Serbia. I'm studying Internet Technologies at Information and Communication Technologies College in Belgrade.</p>
+                    <a href="#link4"><button type="button" class="dugme"> Contact Me</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACT -->
+        <div id="contact" class="btm_border">
+            <h2 class="unclickable" id="link4">Contact</h2>
+            <div id="contactHolder" class="scroll dp-flex">
+                    <form method="POST" action="action.php">
+                        <input type="text" class="ime" name='subject' placeholder="Subject" required/>
+                        <textarea cols="50" rows="10" placeholder="Your Message"></textarea><br>
+                        <a href="mailto:adamnikolic951@gmail.com"><i class="dugme far fa-paper-plane"></i></a>
+                    </form>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="dp-flex">
+        <div class="footerInfo">
+            <p class="unclickable">Copyright &copy; Adam Nikolic 2020 </p>
+        </div>
+        <div class="footerInfo">
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="footerInfo">
+            <ul id="docs">
+                <li><a href="css/style.css" target="_blank"><i class="fab fa-css3"></i></a></li>
+                <li><a href="sitemap.xml" target="_blank"><i class="fa fa-sitemap"></i></a></li>
+                <li><a href="css/style.scss" target="_blank"><i class="fab fa-sass"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        ScrollReveal().reveal('.scroll', {delay:200});
+        ScrollReveal().reveal('.scroll', {reset:true});
+	</script>
+</body>
+</html>
