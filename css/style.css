@@ -288,10 +288,7 @@
   #about #aboutContent #autor img {
 	width: 100%;
 	border-radius: 15px;
-  }
-  #about #aboutContent #autor img:hover {
-	color: rgba(27, 27, 27, 0.7);
-	transition: 0.5s;
+	box-shadow: 5px 5px 15px #000;
   }
   #about #aboutContent #autorTekst {
 	width: 50%;
