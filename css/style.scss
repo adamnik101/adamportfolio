@@ -288,10 +288,7 @@ main {
 			img {
 				width: 100%;
 				border-radius: 15px;
-				&:hover {
-					color: $color_rgba_gray;
-					transition: 0.5s;
-				}
+				box-shadow: 5px 5px 15px $color_black;
 			}
 		}
 		#autorTekst {
