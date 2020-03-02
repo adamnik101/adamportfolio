@@ -567,6 +567,9 @@
 	  width: 300px;
 	  height: 200px;
 	}
+	#about #aboutContent #autor {
+	  width: 200px;
+	}
   }
   @media screen and (max-width: 350px) {
 	#slider #naslovi .naslov {
