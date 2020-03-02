@@ -588,6 +588,9 @@
 	#about #aboutContent #autor {
 	  width: 250px;
 	}
+	#about #aboutContent #autorTekst p {
+	  font-size: 18px;
+	}
   
 	footer .footerInfo p {
 	  font-size: 18px;
