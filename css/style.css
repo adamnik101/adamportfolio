@@ -68,10 +68,8 @@
   .transition {
 	width: 90px;
 	height: 90px;
-	transition: 0.5s;
 	background-color: #fda22b;
 	clip-path: circle(50%);
-	transition: 0.5s;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
