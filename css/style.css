@@ -155,33 +155,7 @@
   }
   
   /*--- SKILLS ---*/
-  #skills_all {
-	width: 100%;
-	padding-bottom: 5%;
-  }
-  #skills_all #skills {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-  }
-  #skills_all #skills .skills_content {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-  }
-  #skills_all #skills .skills_content .chart {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 200px;
-	height: 200px;
-	border: 3px solid #fda22b;
-	border-radius: 50%;
-  }
-@keyframes html {
+  @keyframes html {
 	0% {
         width: 90px;
         height:90px;
@@ -221,6 +195,32 @@
         height: 120px;
 	}
 }
+  #skills_all {
+	width: 100%;
+	padding-bottom: 5%;
+  }
+  #skills_all #skills {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+  }
+  #skills_all #skills .skills_content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+  #skills_all #skills .skills_content .chart {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	border: 3px solid #fda22b;
+	border-radius: 50%;
+  }
   .html {
     animation: html 1.5s ease-in-out alternate infinite;
   }
