@@ -181,21 +181,57 @@
 	border: 3px solid #fda22b;
 	border-radius: 50%;
   }
-  #skills_all #skills .skills_content .chart:hover .html {
-	width: 180px;
-	height: 180px;
+@keyframes html {
+	0% {
+        width: 90px;
+        height:90px;
+	}
+	100% {
+        width: 180px;
+        height: 180px;
+	}
+}
+@keyframes css {
+	0% {
+        width: 90px;
+        height:90px;
+	}
+	100% {
+        width: 160px;
+        height: 160px;
+	}
+}
+@keyframes bs {
+	0% {
+        width: 90px;
+        height:90px;
+	}
+	100% {
+        width: 140px;
+        height: 140px;
+	}
+}
+@keyframes js {
+	0% {
+        width: 90px;
+        height:90px;
+	}
+	100% {
+        width: 120px;
+        height: 120px;
+	}
+}
+  .html {
+    animation: html 1.5s ease-in-out alternate infinite;
   }
-  #skills_all #skills .skills_content .chart:hover .css {
-	width: 160px;
-	height: 160px;
+  .css {
+    animation: css 1.5s ease-in-out alternate infinite;
   }
-  #skills_all #skills .skills_content .chart:hover .bootstrap {
-	width: 140px;
-	height: 140px;
+  .bootstrap {
+    animation: bs 1.5s ease-in-out alternate infinite;
   }
-  #skills_all #skills .skills_content .chart:hover .js {
-	width: 120px;
-	height: 120px;
+  .js {
+    animation: js 1.5s ease-in-out alternate infinite;
   }
   
   #projects {
