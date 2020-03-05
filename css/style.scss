@@ -68,12 +68,10 @@ h2 {
 	flex-wrap: wrap;
 }
 .transition{
-    width: 90px;
+    	width: 90px;
 	height: 90px;
-	transition: 0.5s;
 	background-color: $color_orange;
 	clip-path: circle(50%);
-	transition: 0.5s;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -157,7 +155,51 @@ main {
 }
 
 /*--- SKILLS ---*/
+@keyframes html {
+  0% {
+    width: 90px;
+    height: 90px;
+  }
 
+  100% {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 90px;
+    height: 90px;
+  }
+
+  100% {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@keyframes bs {
+  0% {
+    width: 90px;
+    height: 90px;
+  }
+  100% {
+    width: 140px;
+    height: 140px;
+  }
+}
+@keyframes js {
+   0% {
+     width: 90px;
+     height: 90px;
+  }
+
+   100% {
+     width: 120px;
+     height: 120px;
+  }
+}
 #skills_all {
 	width: 100%;
 	padding-bottom: 5%;
@@ -181,25 +223,22 @@ main {
 				border: 3px solid $color_orange;
                 		border-radius: 50%;
             		}
-				&:hover {
-					.html {
-						width: 180px;
-						height: 180px;
-					}
-					.css {
-						width: 160px;
-						height: 160px;
-					}
-					.bootstrap {
-						width: 140px;
-						height: 140px;
-					}
-					.js {
-						width: 120px;
-						height: 120px;
-					}
+				.html {
+  					animation: html 1.5s ease-in-out alternate infinite;
 				}
-			}
+
+				.css {
+  					animation: css 1.5s ease-in-out alternate infinite;
+				}
+
+				.bootstrap {
+  					animation: bs 1.5s ease-in-out alternate infinite;
+				}
+
+				.js {
+ 					animation: js 1.5s ease-in-out alternate infinite;
+				}
+		}
     	}
 }
 #projects {
