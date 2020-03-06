@@ -15,10 +15,6 @@ html {
   visibility: hidden;
 }
 
-.scroll {
-  visibility: hidden;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -42,7 +38,7 @@ h2 {
   color: #fda22b;
 }
 
-.unclickable {
+h1, h2, h3, h4, p, span {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -79,27 +75,6 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.transition {
-  width: 90px;
-  height: 90px;
-  background-color: #fda22b;
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /*--- SLIDER ---*/
@@ -384,21 +359,85 @@ main {
 #skills_all #skills .skills_content .html {
   -webkit-animation: html 1.5s ease-in-out alternate infinite;
           animation: html 1.5s ease-in-out alternate infinite;
+  background-color: #fda22b;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #skills_all #skills .skills_content .css {
   -webkit-animation: css 1.5s ease-in-out alternate infinite;
           animation: css 1.5s ease-in-out alternate infinite;
+  background-color: #fda22b;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #skills_all #skills .skills_content .bootstrap {
   -webkit-animation: bs 1.5s ease-in-out alternate infinite;
           animation: bs 1.5s ease-in-out alternate infinite;
+  background-color: #fda22b;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #skills_all #skills .skills_content .js {
   -webkit-animation: js 1.5s ease-in-out alternate infinite;
           animation: js 1.5s ease-in-out alternate infinite;
+  background-color: #fda22b;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #projects {

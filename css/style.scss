@@ -7,6 +7,23 @@ $color_border: #686868;
 $color_rgba_gray: rgba(27, 27, 27, 0.7);
 $color_rgba_orange: rgba(253, 162, 43, 0.6);
 
+@mixin circle{
+	background-color: $color_orange;
+	clip-path: circle(50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin circleSize{
+	width: 90px;
+    height: 90px;
+}
+@mixin unclickable {
+	user-select: none;
+}
+
 @font-face {
 	font-family: MyFontFamily;
 	src: url(EncodeSansMedium.ttf);
@@ -17,9 +34,6 @@ html {
 	background-size: contain;
 	background-position: center;
 	background-repeat: repeat-y;
-}
-.scroll {
-	visibility: hidden;
 }
 .scroll {
 	visibility: hidden;
@@ -42,8 +56,8 @@ h2 {
 	padding: 30px;
 	color: $color_orange;
 }
-.unclickable {
-	user-select: none;
+h1, h2, h3, h4, p, span{
+	@include unclickable;
 }
 .dugme {
 	padding: 10px 15px;
@@ -69,16 +83,6 @@ h2 {
 .dp-flex {
 	display: flex;
 	flex-wrap: wrap;
-}
-.transition{
-    	width: 90px;
-	height: 90px;
-	background-color: $color_orange;
-	clip-path: circle(50%);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 /*--- SLIDER ---*/
@@ -175,8 +179,7 @@ main {
 // Pulsating effect infinite ---
 @keyframes html {
   0% {
-    width: 90px;
-    height: 90px;
+   @include circleSize;
   }
 
   100% {
@@ -187,8 +190,7 @@ main {
 
 @keyframes css {
   0% {
-    width: 90px;
-    height: 90px;
+   @include circleSize;
   }
 
   100% {
@@ -199,8 +201,7 @@ main {
 
 @keyframes bs {
   0% {
-    width: 90px;
-    height: 90px;
+   @include circleSize;
   }
   100% {
     width: 140px;
@@ -209,8 +210,7 @@ main {
 }
 @keyframes js {
    0% {
-     width: 90px;
-     height: 90px;
+     @include circleSize;
   }
 
    100% {
@@ -244,19 +244,23 @@ main {
 					}
 					// Circle animation ---
 				.html {
-  					animation: html 1.5s ease-in-out alternate infinite;
+					animation: html 1.5s ease-in-out alternate infinite;
+					@include circle;
 				}
 
 				.css {
-  					animation: css 1.5s ease-in-out alternate infinite;
+					animation: css 1.5s ease-in-out alternate infinite;
+					@include circle;
 				}
 
 				.bootstrap {
-  					animation: bs 1.5s ease-in-out alternate infinite;
+					animation: bs 1.5s ease-in-out alternate infinite;
+					@include circle;
 				}
 
 				.js {
- 					animation: js 1.5s ease-in-out alternate infinite;
+					animation: js 1.5s ease-in-out alternate infinite;
+					@include circle;
 				}
 		}
     	}
