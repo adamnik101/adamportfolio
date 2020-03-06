@@ -241,7 +241,6 @@ main {
   background-color: rgba(27, 27, 27, 0.7);
 }
 
-/*--- SKILLS ---*/
 @-webkit-keyframes html {
   0% {
     width: 90px;
@@ -252,6 +251,7 @@ main {
     height: 180px;
   }
 }
+
 @keyframes html {
   0% {
     width: 90px;
@@ -559,12 +559,49 @@ main {
 }
 
 #contact #contactHolder {
-  width: 50%;
-  margin: 0px auto;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#contact #contactHolder .contactCont {
+  width: 450px;
+}
+
+#contact #contactHolder .contactCont article {
+  width: 100%;
+  height: 60px;
+  background-color: #111;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  color: #686868;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#contact #contactHolder .contactCont article:hover {
+  color: #fda22b;
+  border: 3px solid #fda22b;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#contact #contactHolder .contactCont article .fas {
+  color: #fda22b;
 }
 
 #contact #contactHolder form {
@@ -662,7 +699,7 @@ footer .footerInfo ul li a {
   font-size: 30px;
 }
 
-/*--- SOCIAL ICONS --- */
+/*--- SOCIAL ICONS COLORS --- */
 .fa-facebook-square {
   color: #4267b2;
 }
@@ -704,7 +741,10 @@ footer .footerInfo ul li a {
     padding: 2% 0%;
   }
   #contact #contactHolder {
-    width: 70%;
+    width: 100%;
+  }
+  #contact #contactHolder .contactCont {
+    width: 40%;
   }
 }
 
@@ -769,6 +809,9 @@ footer .footerInfo ul li a {
   }
   #about #aboutContent #autorTekst p {
     font-size: 22px;
+  }
+  #contact #contactHolder .contactCont {
+    width: 90%;
   }
   footer {
     -webkit-box-orient: vertical;

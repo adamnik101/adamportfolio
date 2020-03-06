@@ -10,8 +10,11 @@
     <meta name="copyright" content="Adam Nikolić">
     <meta name="language" content="en">
     <link rel="shortcut icon" href="img/favicon.ico"/>
+    <!-- Minified css  -->
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Font awesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <!-- Reveal on scroll effect library -->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
     <!-- HEADER -->
@@ -151,11 +154,27 @@
         <div id="contact" class="btm_border">
             <h2 class="unclickable" id="link4">Contact</h2>
             <div id="contactHolder" class="scroll dp-flex">
+                <div class="contactCont">
                     <form method="POST" action="action.php">
                         <input type="text" class="ime" name='subject' placeholder="Subject" required/>
                         <textarea cols="50" rows="10" placeholder="Your Message"></textarea><br>
                         <a href="mailto:adamnikolic951@gmail.com"><i class="dugme far fa-paper-plane"></i></a>
                     </form>
+                </div>
+                <div class="contactCont">
+                    <article class="unclickable">
+                        <span><i class="fas fa-user"></i> Adam Nikolić</span>
+                    </article>
+                    <article class="unclickable">
+                        <span><i class="fas fa-graduation-cap"></i> ICT College</span>
+                    </article>
+                        <article class="unclickable">
+                        <span><i class="fas fa-map-marked-alt"></i> Zdravka Čelara 16, Beograd</span>
+                    </article>
+                    <article class="unclickable">
+                        <span><i class="fas fa-phone"></i> +123456789</span>
+                    </article>
+                </div>
             </div>
         </div>
     </main>
@@ -180,6 +199,7 @@
         </div>
     </footer>
     <script>
+        // js scroll effect 
         ScrollReveal().reveal('.scroll', {delay:200});
         ScrollReveal().reveal('.scroll', {reset:true});
 	</script>
