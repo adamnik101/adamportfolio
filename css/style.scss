@@ -92,7 +92,7 @@ h2 {
 		height: 70px;
 		justify-content: space-between;
 		box-shadow: 0px 10px 15px 5px $color_black;
-		background: linear-gradient(-45deg, rgb(252, 144, 21), rgb(253, 162, 43), rgb(253, 146, 46), rgb(253, 162, 43));
+		background: linear-gradient(-45deg, rgba(252, 113, 21, 0.863), rgba(253, 162, 43, 0.747), rgb(240, 131, 29), rgba(253, 162, 43, 0.315));
 		background-size: 400% 400%;
 		animation: gradient 10s ease infinite;
 		// Background animation change ---
@@ -388,13 +388,11 @@ main {
 				align-items: center;
 				justify-content: flex-start;
 				color: $color_border;
-				border-radius: 20px;
-				border: 3px solid transparent;
+				border-right: 3px solid $color_orange;
 				transition: 0.5s ease;
 				font-weight: bold;
 				&:hover{
 					color: $color_orange;
-					border: 3px solid $color_orange;
 					transition: 0.5s ease;
 				} 
 				.fas{
