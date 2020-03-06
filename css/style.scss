@@ -94,7 +94,7 @@ h2 {
 		box-shadow: 0px 10px 15px 5px $color_black;
 		background: linear-gradient(-45deg, rgba(253, 162, 43, 0.8), rgba(235, 135, 4, 0.8), rgba(187, 75, 0, 0.8), rgba(253, 162, 43, 0.8));
 		background-size: 400% 400%;
-		animation: gradient 15s ease infinite;
+		animation: gradient 10s ease infinite;
 		@keyframes gradient {
 			0% {
 				background-position: 0% 50%;

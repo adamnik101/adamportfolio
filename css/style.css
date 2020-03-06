@@ -119,8 +119,8 @@ h2 {
           box-shadow: 0px 10px 15px 5px #000;
   background: linear-gradient(-45deg, rgba(253, 162, 43, 0.8), rgba(235, 135, 4, 0.8), rgba(187, 75, 0, 0.8), rgba(253, 162, 43, 0.8));
   background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
 }
 
 @-webkit-keyframes gradient {
