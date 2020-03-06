@@ -92,7 +92,7 @@ h2 {
 		height: 70px;
 		justify-content: space-between;
 		box-shadow: 0px 10px 15px 5px $color_black;
-		background: linear-gradient(-45deg, rgba(253, 162, 43, 0.8), rgba(235, 135, 4, 0.8), rgba(187, 75, 0, 0.8), rgba(253, 162, 43, 0.8));
+		background: linear-gradient(-45deg, rgb(252, 144, 21), rgb(253, 162, 43), rgb(253, 146, 46), rgb(253, 162, 43));
 		background-size: 400% 400%;
 		animation: gradient 10s ease infinite;
 		// Background animation change ---
@@ -303,6 +303,7 @@ main {
 					}
 					span {
 						padding: 10px;
+						font-style: italic;
 					}
 					a {
 						position: absolute;
@@ -385,11 +386,12 @@ main {
 				margin-bottom: 20px;
 				display: flex;
 				align-items: center;
-				justify-content: center;
+				justify-content: flex-start;
 				color: $color_border;
 				border-radius: 20px;
 				border: 3px solid transparent;
 				transition: 0.5s ease;
+				font-weight: bold;
 				&:hover{
 					color: $color_orange;
 					border: 3px solid $color_orange;
@@ -397,6 +399,8 @@ main {
 				} 
 				.fas{
 					color:$color_orange;
+					padding: 0px 30px 0px 10px;
+					font-size:22px;
 				}
 			}
 		}
@@ -736,6 +740,18 @@ footer {
 			#autorTekst {
 				p {
 				   font-size: 18px;
+				}
+			}
+		}
+	}
+	#contact{
+		#contactHolder{
+			.contactCont{
+				article{
+					font-size:15px;
+					.fas{
+						padding:0px 10px 0px 10px;
+					}
 				}
 			}
 		}

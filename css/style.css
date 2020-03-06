@@ -117,7 +117,7 @@ h2 {
           justify-content: space-between;
   -webkit-box-shadow: 0px 10px 15px 5px #000;
           box-shadow: 0px 10px 15px 5px #000;
-  background: linear-gradient(-45deg, rgba(253, 162, 43, 0.8), rgba(235, 135, 4, 0.8), rgba(187, 75, 0, 0.8), rgba(253, 162, 43, 0.8));
+  background: linear-gradient(-45deg, #fc9015, #fda22b, #fd922e, #fda22b);
   background-size: 400% 400%;
   -webkit-animation: gradient 10s ease infinite;
           animation: gradient 10s ease infinite;
@@ -465,6 +465,7 @@ main {
 
 #projects #prjtContent .prjtImg figure figcaption span {
   padding: 10px;
+  font-style: italic;
 }
 
 #projects #prjtContent .prjtImg figure figcaption a {
@@ -583,14 +584,15 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: #686868;
   border-radius: 20px;
   border: 3px solid transparent;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  font-weight: bold;
 }
 
 #contact #contactHolder .contactCont article:hover {
@@ -602,6 +604,8 @@ main {
 
 #contact #contactHolder .contactCont article .fas {
   color: #fda22b;
+  padding: 0px 30px 0px 10px;
+  font-size: 22px;
 }
 
 #contact #contactHolder form {
@@ -945,6 +949,12 @@ footer .footerInfo ul li a {
   }
   #about #aboutContent #autorTekst p {
     font-size: 18px;
+  }
+  #contact #contactHolder .contactCont article {
+    font-size: 15px;
+  }
+  #contact #contactHolder .contactCont article .fas {
+    padding: 0px 10px 0px 10px;
   }
   footer .footerInfo p {
     font-size: 18px;
