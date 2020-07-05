@@ -925,6 +925,9 @@ footer .footerInfo ul li a {
             justify-content: flex-start;
     height: 100%;
   }
+  #slider #naslovi {
+    height: 50%;
+  }
   #skills_all {
     margin-top: 50px;
     border-top: 5px solid #fda22b;
