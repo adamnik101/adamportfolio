@@ -20,9 +20,8 @@
     <!-- HEADER -->
     <header id="slider" class="btm_border">
         <!-- BAR -->
-        <div id="bar" class="dp-flex">
-            <!-- LOGO -->
-            <div id="logo" class="scroll">
+        <div id="bar">
+            <div id="logo">
                 <div id="logoImg">
                     <a href="https://adamnik101.github.io/adamportfolio/index.html">
                         <img src="img/logo.png" alt="logo">
@@ -32,18 +31,25 @@
                     <span>UI / UX / WEB design</span>
                 </h1>
             </div>
-            <!-- NAVIGATION -->
-            <nav class="scroll">
+            <nav>
+                <ul class="dp-flex remove">
+                    <button class="bars"><i class="fas fa-bars"></i></button>
+                    <li><a href="#link1">Skills</a></li>
+                    <li><a href="#link2">Projects</a></li>
+                    <li><a href="#link3">About</a></li>
+                    <li><a href="#link4">Contact</a></li>
+                </ul>
                 <ul class="dp-flex">
-                    <li class="dp-flex"><a href="#link1">Skills</a></li>
-                    <li class="dp-flex"><a href="#link2">Projects</a></li>
-                    <li class="dp-flex"><a href="#link3">About</a></li>
-                    <li class="dp-flex"><a href="#link4">Contact</a></li>
+                    <button class="bars"><i class="fas fa-bars"></i></button>
+                    <li class="hides"><a href="#link1">Skills</a></li>
+                    <li class="hides"><a href="#link2">Projects</a></li>
+                    <li class="hides"><a href="#link3">About</a></li>
+                    <li class="hides"><a href="#link4">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <!-- NASLOVI U SLIDERU -->
-        <div id="naslovi" class="scroll">
+        <div id="naslovi">
             <h1 class="naslov"><i class="fa fa-laptop"></i><span > Adam Nikolić</span></h1>
             <h2 class="naslov"><span >Front-end developer </span><i class="fa fa-code"></i></h2>
         </div>
@@ -53,7 +59,7 @@
         <div id="skills_all" class="btm_border">
             <h2  id="link1">Skills</h2>
             <!-- CONTENT SKILLS -->
-            <div id="skills" class="scroll">
+            <div id="skills">
                 <div class="skills_content">
                     <div class="chart">
                         <div class="html">
@@ -94,7 +100,7 @@
         <!-- PROJECTS -->
         <div id="projects" class="btm_border">
             <h2  id="link2">Projects</h2>
-            <div id="prjtContent" class="scroll dp-flex">
+            <div id="prjtContent" class="dp-flex">
                 <div class="prjtImg">
                     <figure>
                         <img src="img/astro.jpg" alt="project"/>
@@ -140,7 +146,7 @@
         <!-- ABOUT -->
         <div id="about" class="btm_border">
             <h2  id="link3">About</h2>
-            <div id="aboutContent" class="scroll">
+            <div id="aboutContent">
                 <div id="autor">
                     <img src="img/autor.jpg" alt="author"/>
                 </div>
@@ -204,4 +210,18 @@
         ScrollReveal().reveal('.scroll', {reset:true});
 	</script>
 </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    $("document").ready(function(){
+    $(".bars").click(function(){
+    if($("i", this).hasClass() == "fa-bars"){
+        $("i", this).toggleClass("fa-bars fa-times");}
+    else{        
+        $("i", this).toggleClass("fa-times fa-bars");      
+    }
+    $(".hides").toggle("slow");
+  });
+  $(".hides").hide();
+});
+    </script>
 </html>

@@ -81,17 +81,19 @@ h1, h2, h3, h4, p, span {
 #slider {
   width: 100%;
   color: #fda22b;
+  position: relative;
+  z-index: 999;
 }
 
 #slider #bar {
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 70px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-shadow: 0px 10px 15px 5px #000;
           box-shadow: 0px 10px 15px 5px #000;
-  background: linear-gradient(-45deg, rgba(252, 113, 21, 0.863), rgba(253, 162, 43, 0.747), #f0831d, rgba(253, 162, 43, 0.315));
+  background: linear-gradient(-45deg, #fc7115, #fda22b, #f0831d, #fda22b);
   background-size: 400% 400%;
   -webkit-animation: gradient 10s ease infinite;
           animation: gradient 10s ease infinite;
@@ -150,18 +152,16 @@ h1, h2, h3, h4, p, span {
 }
 
 #slider #bar nav {
-  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100% !important;
   width: 400px;
 }
 
-#slider #bar nav ul {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+#slider #bar nav ul .bars {
+  display: none;
+  height: 70px !important;
 }
 
 #slider #bar nav ul li {
@@ -169,6 +169,7 @@ h1, h2, h3, h4, p, span {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px 15px;
+  margin-top: 15px;
 }
 
 #slider #bar nav ul li a {
@@ -308,6 +309,8 @@ main {
 #skills_all {
   width: 100%;
   padding-bottom: 5%;
+  position: relative;
+  z-index: 1;
 }
 
 #skills_all #skills {
@@ -803,22 +806,48 @@ footer .footerInfo ul li a {
 }
 
 @media screen and (max-width: 720px) {
-  #slider #bar {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 140px;
-  }
-  #slider #bar #logo {
-    height: 50%;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   #slider #bar nav {
-    height: 50%;
+    width: 100% !important;
+  }
+  #slider #bar nav .remove {
+    display: none;
+  }
+  #slider #bar nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
+  }
+  #slider #bar nav ul .bars {
+    display: block;
+    background-color: transparent;
+    color: #111;
+    border: none;
+    padding: 15px;
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  #slider #bar nav ul li {
+    background: linear-gradient(-45deg, #fc7115, #fda22b, #f0831d, #fda22b);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+    margin: 0px !important;
+    padding: 0px;
+    text-align: center;
+  }
+  #slider #bar nav ul li a {
+    display: block;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+  #slider #bar nav ul li a:hover {
+    border-bottom: 3px solid transparent;
+    background-color: #111;
   }
   #slider #naslovi {
     width: 100%;
@@ -885,45 +914,14 @@ footer .footerInfo ul li a {
 
 @media screen and (max-width: 480px) {
   #slider {
-    height: 550px;
     margin-bottom: 15%;
     border-bottom: none;
   }
-  #slider #bar {
-    height: 50%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #slider #bar #logo {
-    width: 100%;
-    height: 20%;
-  }
-  #slider #bar #logo h1 {
+  #slider #bar h1 {
     text-align: center;
   }
-  #slider #bar #logo .unclickable {
+  #slider #bar .unclickable {
     font-size: 15px;
-  }
-  #slider #bar #logo #logoImg {
-    display: none;
-  }
-  #slider #bar nav {
-    height: 80%;
-    width: 100%;
-  }
-  #slider #bar nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    height: 100%;
   }
   #slider #naslovi {
     height: 50%;
