@@ -561,6 +561,7 @@ footer {
 @media screen and (max-width: 720px) {
 	#slider {
 		#bar {
+			border-bottom:5px solid #111;
 			nav {
 				width:100% !important;
 				.remove{
@@ -581,10 +582,8 @@ footer {
 						align-self:flex-end;
 					}
 					li{
-						background: linear-gradient(-45deg, rgb(252, 113, 21), rgb(253, 162, 43), rgb(240, 131, 29), rgb(253, 162, 43));
-		background-size: 400% 400%;
-		animation: gradient 10s ease infinite;
-		margin:0px !important;
+						background-color: #fda22b;
+						margin:0px !important;
 							padding:0px;
 							text-align: center;
 						a{
@@ -669,14 +668,22 @@ footer {
 	#slider {
 		margin-bottom: 15%;
 		border-bottom: none;
-		#bar {
-				h1 {
-					text-align: center;
+		#bar {	
+			#logo{
+				width:200px;
+				#logoImg{
+					width:50% !important;
+					img{
+						height:100%;
+					}
 				}
-				.unclickable {
-					font-size: 15px;
+				h1{
+					font-size:14px !important;
+					width:50%;
+					padding:0px;
 				}
 			}
+		}
 		#naslovi{
 			height:50%;
 		}

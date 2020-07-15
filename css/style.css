@@ -806,6 +806,9 @@ footer .footerInfo ul li a {
 }
 
 @media screen and (max-width: 720px) {
+  #slider #bar {
+    border-bottom: 5px solid #111;
+  }
   #slider #bar nav {
     width: 100% !important;
   }
@@ -832,10 +835,7 @@ footer .footerInfo ul li a {
         align-self: flex-end;
   }
   #slider #bar nav ul li {
-    background: linear-gradient(-45deg, #fc7115, #fda22b, #f0831d, #fda22b);
-    background-size: 400% 400%;
-    -webkit-animation: gradient 10s ease infinite;
-            animation: gradient 10s ease infinite;
+    background-color: #fda22b;
     margin: 0px !important;
     padding: 0px;
     text-align: center;
@@ -918,11 +918,19 @@ footer .footerInfo ul li a {
     margin-bottom: 15%;
     border-bottom: none;
   }
-  #slider #bar h1 {
-    text-align: center;
+  #slider #bar #logo {
+    width: 200px;
   }
-  #slider #bar .unclickable {
-    font-size: 15px;
+  #slider #bar #logo #logoImg {
+    width: 50% !important;
+  }
+  #slider #bar #logo #logoImg img {
+    height: 100%;
+  }
+  #slider #bar #logo h1 {
+    font-size: 14px !important;
+    width: 50%;
+    padding: 0px;
   }
   #slider #naslovi {
     height: 50%;
