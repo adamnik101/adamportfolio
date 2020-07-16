@@ -222,6 +222,10 @@
     $("li").toggle("medium");
   });
   $(".hides").hide();
+  $(".hides").click(function(){
+      if($("li").hide())
+        $("i", ".bars").toggleClass("fa-times fa-bars");
+      ;})
 });
     </script>
 </html>
