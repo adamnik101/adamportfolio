@@ -33,7 +33,6 @@
             </div>
             <nav>
                 <ul class="dp-flex remove">
-                    <button class="bars"><i class="fas fa-bars"></i></button>
                     <li><a href="#link1">Skills</a></li>
                     <li><a href="#link2">Projects</a></li>
                     <li><a href="#link3">About</a></li>
@@ -41,10 +40,10 @@
                 </ul>
                 <ul class="dp-flex">
                     <button class="bars"><i class="fas fa-bars"></i></button>
-                    <li class="hides"><a href="#link1">Skills</a></li>
-                    <li class="hides"><a href="#link2">Projects</a></li>
-                    <li class="hides"><a href="#link3">About</a></li>
-                    <li class="hides"><a href="#link4">Contact</a></li>
+                    <li class="hides ar"><a href="#link1">Skills</a></li>
+                    <li class="hides ar"><a href="#link2">Projects</a></li>
+                    <li class="hides ar"><a href="#link3">About</a></li>
+                    <li class="hides ar"><a href="#link4">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -222,10 +221,14 @@
     $("li").toggle("medium");
   });
   $(".hides").hide();
-  $(".hides").click(function(){
-      if($("li").hide())
-        $("i", ".bars").toggleClass("fa-times fa-bars");
-      ;})
 });
+$("document").ready(function(){
+    $(".hides").click(function(){
+        $(".ar").hide();
+        if($(".ar").hide())
+        {
+            $("i", ".bars").toggleClass("fa-times fa-bars");
+        }
+    });});
     </script>
 </html>
