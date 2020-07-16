@@ -91,8 +91,8 @@ h1, h2, h3, h4, p, span {
   right: 0;
   width: 100%;
   height: 70px;
-  -webkit-box-shadow: 0px 10px 15px 5px #000;
-          box-shadow: 0px 10px 15px 5px #000;
+  -webkit-box-shadow: 0px 5px 10px 0px #000;
+          box-shadow: 0px 5px 10px 0px #000;
   background: linear-gradient(-45deg, #fc7115, #fda22b, #f0831d, #fda22b);
   background-size: 400% 400%;
   -webkit-animation: gradient 10s ease infinite;
@@ -807,7 +807,7 @@ footer .footerInfo ul li a {
 
 @media screen and (max-width: 720px) {
   #slider #bar {
-    border-bottom: 5px solid #111;
+    border-bottom: 5px solid #000;
   }
   #slider #bar nav {
     width: 100% !important;
@@ -821,6 +821,8 @@ footer .footerInfo ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    -webkit-box-shadow: 0px 10px 15px 5px #000;
+            box-shadow: 0px 10px 15px 5px #000;
   }
   #slider #bar nav ul .bars {
     display: block;
